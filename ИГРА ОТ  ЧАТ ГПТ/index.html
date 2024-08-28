@@ -2,32 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guess the Number Game</title>
-    <link rel="stylesheet" href="style.css">
-    <!-- Подключение SDK Telegram Web Apps -->
-    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <title>Catch the Falling Objects</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Угадай число!</h1>
-        <p>Попробуйте угадать число от 1 до 100</p>
-        <input type="text" id="guess-input" placeholder="Введите число">
-        <button id="guess-button">Угадать</button>
-        <p id="message"></p>
+    <div id="game-container">
+        <div id="player"></div>
+        <div id="object"></div>
+        <div id="score">Score: 0</div>
     </div>
-
     <script src="script.js"></script>
-    <script>
-        // Инициализация Telegram Web App
-        const tg = window.Telegram.WebApp;
-        tg.expand(); // Расширяем веб-приложение на весь экран
-
-        // Отображаем основное содержимое только после инициализации Telegram SDK
-        document.addEventListener('DOMContentLoaded', function() {
-            // Добавим любые действия после загрузки SDK
-        });
-    </script>
 </body>
 </html>
